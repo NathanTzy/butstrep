@@ -240,3 +240,13 @@
 .con-4{
 background-color: aliceblue;
 }
+.con-5{
+    background-color: #273036;
+}
+footer{
+    color: #ffffff;
+}
+.nav-item i{
+    font-size: 1.8rem;
+    padding: 0 5px;
+}
