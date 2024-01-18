@@ -19,10 +19,21 @@
 
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="" width="90px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <div class="hamburger">
+                    <input class="checkbox" type="checkbox" />
+                    <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+                        <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black"
+                            d="M6 11L44 11"></path>
+                        <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 24H43" class="lineMid line">
+                        </path>
+                        <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 37H43"
+                            class="lineBottom line"></path>
+                    </svg>
+                </div>
+
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0 pb-2">
@@ -487,6 +498,7 @@
         <h1 class="text-center">DIVISIONS</h1>
 
         <div class="row justify-content-center">
+
 
             <ul class="def nav mb-3 justify-content-center mt-5 justify-content-evenly" id="pills-tab" role="tablist">
                 <li class="nav-item itam" role="presentation">

@@ -3,6 +3,61 @@
     font-size: 1.1rem;
 }
 
+.hamburger {
+    height: 50px;
+    width: 50px;
+    transform: 0.2s;
+    position: relative;
+}
+
+.hamburger .checkbox {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.line {
+    transition: 0.5s;
+    stroke-width: 6px;
+    stroke: black;
+}
+
+.lineTop {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 25;
+}
+
+.lineBottom {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 60;
+}
+
+.lineMid {
+    stroke-dasharray: 40 40;
+}
+
+.hamburger .checkbox:checked+svg .line {
+    stroke: crimson;
+}
+
+.hamburger .checkbox:checked+svg .lineTop {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(45deg) translate(-7px, -5px);
+}
+
+.hamburger .checkbox:checked+svg .lineMid {
+    stroke-dashoffset: 40;
+}
+
+.hamburger .checkbox:checked+svg .lineBottom {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(-45deg) translate(-5px, 5px);
+}
+
 .nav-item a:hover {
     color: rgb(255, 174, 0);
 }
@@ -211,35 +266,48 @@
 
 .con-4 {
     background-color: #ffd700;
-    
+
 }
-.con-4 h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.con-4 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.lee, .lee img{
+
+.lee,
+.lee img {
     transition: .5s;
 }
+.lee{
+    background-color: #c60000;
+    color: #d5d5d5;
+}
+
 .lee:hover {
     box-shadow: 1px 3px 30px rgb(0, 0, 0);
     cursor: pointer;
+
     img {
         transform: translateY(-45px);
-        
+
     }
+
 
     transform: translateY(-20px);
 }
-.itam button{
-color: #ffffff;
-font-size: 1.5rem;
-border: none;
-background-color: #ffd700;
-transition: .5s;
-text-decoration: underline;
+
+.itam button {
+    color: #ffffff;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #ffd700;
+    transition: .5s;
+    text-decoration: underline;
 }
-.itam button:hover{
+
+.itam button:hover {
     color: black;
 }
+
 @media screen and (max-width:769px) {
     .tab {
         display: flex;
@@ -259,7 +327,8 @@ text-decoration: underline;
         display: flex;
         flex-direction: column;
     }
-    .def{
+
+    .def {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -269,7 +338,8 @@ text-decoration: underline;
         width: 200px;
         height: 220px;
     }
-    .itam{
+
+    .itam {
         margin: 8px 0;
     }
 }
@@ -279,7 +349,8 @@ text-decoration: underline;
         font-size: 1.7rem;
     }
 }
-.bro{
+
+.bro {
     background-color: #d5d5d5;
     width: 100%;
 }
